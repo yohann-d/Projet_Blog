@@ -284,7 +284,11 @@ session_start();
                         <!-- Section Title -->
                         <div class="section-heading">
                             <h5>LEAVE A REPLY</h5>
+
                         </div>
+                        <?php 
+                        if(isset($_SESSION['id_Type'])) {
+                        ?>
 
                         <!-- Reply Form -->
                         <div class="contact-form-area">
@@ -305,6 +309,7 @@ session_start();
                                 </div>
                             </form>
                         </div>
+                        <?php } ?>
                     </div>
                 </div>
 

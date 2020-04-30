@@ -301,6 +301,9 @@ session_start();
                         </div>
 
                         <!-- Reply Form -->
+                        <?php 
+                        if(isset($_SESSION['id_Type'])) {
+                        ?>
                         <div class="contact-form-area">
                             <form action="#" method="post">
                                 <div class="row">
@@ -319,6 +322,9 @@ session_start();
                                 </div>
                             </form>
                         </div>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
 

@@ -56,6 +56,11 @@
                             <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </form>
                     </div>
+                    <?php
+                    if(isset($_SESSION['id_Type'])) {
+                        if($_SESSION['id_Type']=='3'){?>
+                    <a href="admin.php" class="login-btn" >Panneau d'admin</a>
+                    <?php } }?>
                     <!-- Login -->
                     <?php
                     if(isset($_SESSION['email'])){ ?>
@@ -68,7 +73,11 @@
                     <?php } ?>
 
                     <!-- Submit Video -->
+                    <?php 
+                        if(isset($_SESSION['id_Type'])) {
+                        ?>
                     <a href="submit-video.php" class="submit-video"><span><i class="fa fa-cloud-upload"></i></span> <span class="video-text">Submit Video</span></a>
+                        <?php } ?>
                 </div>
             </div>
         </nav>
